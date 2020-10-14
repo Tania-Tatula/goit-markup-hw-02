@@ -1,0 +1,50 @@
+/* колір акцент синій color: #2196F3; */
+/* колір меню чорний color: #212121 */
+/* колір телефону color: #757575 */
+/* колір акцент білий color: #FFFFFF; */
+/* сірий колір тексту color: #757575 */
+/* колір тексту в футері 
+255,255,255,0,6 */
+
+:root {
+    --primari-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+}
+
+body {
+    background-color: #E5E5E5;
+    color: var(--primari-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.logo {
+    color: var(--title-text-color);
+}
+.logotip {
+    color: var(--accent-color);
+}
+
+/* site-nav */
+.site-nav .link {
+    color: var(--title-text-color);
+}
+
+
+.site-nav .link:hover,
+.site-nav .link:focus { 
+    var(--title-text-color);
+}
+
+/* hero */
+.hero-title {
+color: #FFFFFF;
+}
+
+/* section */
+.section-title {
+    color: var(--title-text-color);
+}
