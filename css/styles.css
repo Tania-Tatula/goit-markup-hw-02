@@ -46,8 +46,7 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primari-text-color);
-    background-color: var(--bg-color);
-    
+    background-color: var(--bg-color);  
 }
 
 
@@ -57,10 +56,11 @@ body {
     text-decoration: none;
 }
 
-    link:hover,
-    link:focus { 
+.link:hover,
+.link:focus { 
     color: var(--accent-color);
-    }
+}
+ 
 
  /* стилі для кнопок */
  .btn {
