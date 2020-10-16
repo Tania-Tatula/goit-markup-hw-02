@@ -51,7 +51,8 @@ body {
 
 
 /* стилі для всіх ссилок */
-.link {
+.link,
+.link-hf {
     color: inherit;
     text-decoration: none;
 }
@@ -64,7 +65,7 @@ body {
 
  /* стилі для кнопок */
  .btn {
-      
+    
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -77,8 +78,40 @@ body {
     background-color: var(--accent-color);
  }
 
- /* стилі для меню */
+ /* стилі для лого*/
+ .logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,192;
+    letter-spacing: 0.03em;
+}
+.logo-color {
+    color: var(--accent-color);
+}
 
+.logo-color-header {
+    color: var(--title-text-color);
+}
+
+.logo-color-footer {
+    color: var(--title-page-color);
+}
+
+
+ /* стилі для меню */
+.menu-link,
+.contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+
+.contacts {
+    color: var(--primari-text-color);
+}
 
 /* стилі для всіх заголовків  */
 .section-title {
@@ -118,18 +151,40 @@ body {
     text-transform: uppercase;   
  }
 
+/* стилі для тексту */
+.paragraf {
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+}
+
+.footer-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.address-color {
+    color: var(--title-page-color);
+}
+
+.mt-color {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* стилі для фону */
+.bg-color {
+    background-color: var(--bg-dark-color);
+}
 
 
 .list {
     list-style: none;
 }
 
-.logo {
-    color: var(--title-text-color);
-}
-.logotip {
-    color: var(--accent-color);
-}
+
 
 
 
