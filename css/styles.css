@@ -1,3 +1,18 @@
+/* raleway-700 - latin_cyrillic */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/raleway-v18-latin_cyrillic-700.eot'); 
+    src: local(''),
+         url('../fonts/raleway/raleway-v18-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/raleway/raleway-v18-latin_cyrillic-700.woff2') format('woff2'),
+         url('../fonts/raleway/raleway-v18-latin_cyrillic-700.woff') format('woff'), 
+         url('../fonts/raleway/raleway-v18-latin_cyrillic-700.ttf') format('truetype'),
+         url('../fonts/raleway/raleway-v18-latin_cyrillic-700.svg#Raleway') format('svg');
+  }
+
+
 /* колір акцент синій color: #2196F3; */
 /* колір меню чорний color: #212121 */
 /* колір телефону color: #757575 */
@@ -6,16 +21,104 @@
 /* колір тексту в футері 
 255,255,255,0,6 */
 
+/* Roboto 
+900
+700
+400
+500
+Raleway
+700*/
+
+
 :root {
     --primari-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
+    --title-page-color: #FFFFFF;
+    --bg-color: #E5E5E5;
+    --bg-dark-color: #2F303A;
 }
 
 body {
-    background-color: #E5E5E5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
     color: var(--primari-text-color);
+    background-color: var(--bg-color);
+    
 }
+
+
+/* стилі для всіх ссилок */
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+    link:hover,
+    link:focus { 
+    color: var(--accent-color);
+    }
+
+ /* стилі для кнопок */
+ .btn {
+      
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height:1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--title-page-color);
+    background-color: var(--accent-color);
+ }
+
+ /* стилі для меню */
+
+
+/* стилі для всіх заголовків  */
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.66;
+    text-align: center;
+}
+
+
+.section-title-mini {
+    font-size: 16px;
+    line-height: 1.187;
+    font-weight: 500;
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+
+.section-title-caps {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14x;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+
+ .page-title {
+    color: var(--title-page-color);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;   
+ }
+
+
 
 .list {
     list-style: none;
@@ -28,23 +131,7 @@ body {
     color: var(--accent-color);
 }
 
-/* site-nav */
-.site-nav .link {
-    color: var(--title-text-color);
-}
 
 
-.site-nav .link:hover,
-.site-nav .link:focus { 
-    var(--title-text-color);
-}
 
-/* hero */
-.hero-title {
-color: #FFFFFF;
-}
 
-/* section */
-.section-title {
-    color: var(--title-text-color);
-}
