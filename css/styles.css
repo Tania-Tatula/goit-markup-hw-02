@@ -13,23 +13,6 @@
   }
 
 
-/* колір акцент синій color: #2196F3; */
-/* колір меню чорний color: #212121 */
-/* колір телефону color: #757575 */
-/* колір акцент білий color: #FFFFFF; */
-/* сірий колір тексту color: #757575 */
-/* колір тексту в футері 
-255,255,255,0,6 */
-
-/* Roboto 
-900
-700
-400
-500
-Raleway
-700*/
-
-
 :root {
     --primari-text-color: #757575;
     --title-text-color: #212121;
@@ -37,6 +20,7 @@ Raleway
     --title-page-color: #FFFFFF;
     --bg-color: #E5E5E5;
     --bg-dark-color: #2F303A;
+    --bg-color-blu: #F5F4FA;
 }
 
 body {
@@ -46,9 +30,14 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primari-text-color);
-    background-color: var(--bg-color);  
+    background-color: var(--bg-color); 
+    width: 100%;
+
 }
 
+.list {
+    list-style: none;
+}
 
 /* стилі для всіх ссилок */
 .link,
@@ -79,6 +68,7 @@ body {
     letter-spacing: 0.06em;
     color: var(--title-page-color);
     background-color: var(--accent-color);
+    border: none;
  }
 
  .btn-portfolio {
@@ -125,6 +115,10 @@ body {
     line-height: 1.142;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+}
+
+.current {
+    color: var(--accent-color);
 }
 
 .contacts {
@@ -221,13 +215,11 @@ address {
 }
 
 .bg-color-blu {
-    background: #F5F4FA;
+    background: var(--bg-color-blu);
 }
 
-.list {
-    list-style: none;
-}
 
+/* довжина сторінки */
 
 
 
